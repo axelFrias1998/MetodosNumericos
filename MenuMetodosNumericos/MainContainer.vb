@@ -56,40 +56,58 @@
     End Sub
 
     Private Sub ChangeOption()
-
+        For Each ctrl As Control In panelFormularios.Controls
+            If TypeOf ctrl Is Form Then
+                panelFormularios.Controls.Remove(ctrl)
+            End If
+        Next
+        ImparesButton.BackColor = Color.FromArgb(192, 192, 255)
+        RaizDeDosButton.BackColor = Color.FromArgb(192, 192, 255)
+        BiseccionButton.BackColor = Color.FromArgb(192, 192, 255)
+        ReglaFalsaButton.BackColor = Color.FromArgb(192, 192, 255)
+        NewtonRahpsonButton.BackColor = Color.FromArgb(192, 192, 255)
+        JacobiButton.BackColor = Color.FromArgb(192, 192, 255)
+        GaussSeidelButton.BackColor = Color.FromArgb(192, 192, 255)
     End Sub
 
     Private Sub ImparesButton_Click(sender As Object, e As EventArgs) Handles ImparesButton.Click
+        ChangeOption()
         AbrirFormEnPanel(Of Impares)()
         ImparesButton.BackColor = Color.FromArgb(128, 128, 255)
     End Sub
 
     Private Sub RaizDeDosButton_Click(sender As Object, e As EventArgs) Handles RaizDeDosButton.Click
+        ChangeOption()
         AbrirFormEnPanel(Of RaizDeDos)()
         RaizDeDosButton.BackColor = Color.FromArgb(128, 128, 255)
     End Sub
 
     Private Sub BiseccionButton_Click(sender As Object, e As EventArgs) Handles BiseccionButton.Click
+        ChangeOption()
         AbrirFormEnPanel(Of Biseccion)()
         BiseccionButton.BackColor = Color.FromArgb(128, 128, 255)
     End Sub
 
     Private Sub ReglaFalsa_Click(sender As Object, e As EventArgs) Handles ReglaFalsaButton.Click
+        ChangeOption()
         AbrirFormEnPanel(Of ReglaFalsa)()
         ReglaFalsaButton.BackColor = Color.FromArgb(128, 128, 255)
     End Sub
 
     Private Sub NewtonRahpsonButton_Click(sender As Object, e As EventArgs) Handles NewtonRahpsonButton.Click
+        ChangeOption()
         AbrirFormEnPanel(Of NewtonRaphson)()
         NewtonRahpsonButton.BackColor = Color.FromArgb(128, 128, 255)
     End Sub
 
     Private Sub JacobiButton_Click(sender As Object, e As EventArgs) Handles JacobiButton.Click
+        ChangeOption()
         AbrirFormEnPanel(Of Jacobi)()
         JacobiButton.BackColor = Color.FromArgb(128, 128, 255)
     End Sub
 
     Private Sub GaussSeidelButton_Click(sender As Object, e As EventArgs) Handles GaussSeidelButton.Click
+        ChangeOption()
         AbrirFormEnPanel(Of GaussSeidel)()
         GaussSeidelButton.BackColor = Color.FromArgb(128, 128, 255)
     End Sub
