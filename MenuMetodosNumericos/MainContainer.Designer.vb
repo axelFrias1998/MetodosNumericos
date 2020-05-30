@@ -25,20 +25,20 @@ Partial Class MainContainer
         Me.PanelContainer = New System.Windows.Forms.Panel()
         Me.panelFormularios = New System.Windows.Forms.Panel()
         Me.panelMenu = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.GaussSeidelButton = New System.Windows.Forms.Button()
+        Me.JacobiButton = New System.Windows.Forms.Button()
+        Me.NewtonRahpsonButton = New System.Windows.Forms.Button()
+        Me.RaizDeDosButton = New System.Windows.Forms.Button()
+        Me.BiseccionButton = New System.Windows.Forms.Button()
+        Me.ReglaFalsaButton = New System.Windows.Forms.Button()
+        Me.ImparesButton = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.PanelTitulo = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Salir = New System.Windows.Forms.PictureBox()
-        Me.ImparesButton = New System.Windows.Forms.Button()
-        Me.ReglaFalsaButton = New System.Windows.Forms.Button()
-        Me.BiseccionButton = New System.Windows.Forms.Button()
-        Me.RaizDeDosButton = New System.Windows.Forms.Button()
-        Me.NewtonRahpsonButton = New System.Windows.Forms.Button()
-        Me.JacobiButton = New System.Windows.Forms.Button()
-        Me.GaussSeidelButton = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.PanelContainer.SuspendLayout()
         Me.panelMenu.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,6 +87,100 @@ Partial Class MainContainer
         Me.panelMenu.Size = New System.Drawing.Size(200, 503)
         Me.panelMenu.TabIndex = 1
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(3, 318)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(93, 15)
+        Me.Label4.TabIndex = 19
+        Me.Label4.Text = "Segundo parcial"
+        '
+        'GaussSeidelButton
+        '
+        Me.GaussSeidelButton.FlatAppearance.BorderSize = 0
+        Me.GaussSeidelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.GaussSeidelButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GaussSeidelButton.Location = New System.Drawing.Point(0, 372)
+        Me.GaussSeidelButton.Name = "GaussSeidelButton"
+        Me.GaussSeidelButton.Size = New System.Drawing.Size(200, 30)
+        Me.GaussSeidelButton.TabIndex = 17
+        Me.GaussSeidelButton.Text = "Gauss-Seidel"
+        Me.GaussSeidelButton.UseVisualStyleBackColor = True
+        '
+        'JacobiButton
+        '
+        Me.JacobiButton.FlatAppearance.BorderSize = 0
+        Me.JacobiButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.JacobiButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.JacobiButton.Location = New System.Drawing.Point(0, 336)
+        Me.JacobiButton.Name = "JacobiButton"
+        Me.JacobiButton.Size = New System.Drawing.Size(200, 30)
+        Me.JacobiButton.TabIndex = 16
+        Me.JacobiButton.Text = "Jacobi"
+        Me.JacobiButton.UseVisualStyleBackColor = True
+        '
+        'NewtonRahpsonButton
+        '
+        Me.NewtonRahpsonButton.FlatAppearance.BorderSize = 0
+        Me.NewtonRahpsonButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.NewtonRahpsonButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NewtonRahpsonButton.Location = New System.Drawing.Point(0, 285)
+        Me.NewtonRahpsonButton.Name = "NewtonRahpsonButton"
+        Me.NewtonRahpsonButton.Size = New System.Drawing.Size(200, 30)
+        Me.NewtonRahpsonButton.TabIndex = 15
+        Me.NewtonRahpsonButton.Text = "Newton Raphson"
+        Me.NewtonRahpsonButton.UseVisualStyleBackColor = True
+        '
+        'RaizDeDosButton
+        '
+        Me.RaizDeDosButton.FlatAppearance.BorderSize = 0
+        Me.RaizDeDosButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.RaizDeDosButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RaizDeDosButton.Location = New System.Drawing.Point(0, 177)
+        Me.RaizDeDosButton.Name = "RaizDeDosButton"
+        Me.RaizDeDosButton.Size = New System.Drawing.Size(200, 30)
+        Me.RaizDeDosButton.TabIndex = 14
+        Me.RaizDeDosButton.Text = "Raíz de dos"
+        Me.RaizDeDosButton.UseVisualStyleBackColor = True
+        '
+        'BiseccionButton
+        '
+        Me.BiseccionButton.FlatAppearance.BorderSize = 0
+        Me.BiseccionButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BiseccionButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BiseccionButton.Location = New System.Drawing.Point(0, 213)
+        Me.BiseccionButton.Name = "BiseccionButton"
+        Me.BiseccionButton.Size = New System.Drawing.Size(200, 30)
+        Me.BiseccionButton.TabIndex = 13
+        Me.BiseccionButton.Text = "Bisección"
+        Me.BiseccionButton.UseVisualStyleBackColor = True
+        '
+        'ReglaFalsaButton
+        '
+        Me.ReglaFalsaButton.FlatAppearance.BorderSize = 0
+        Me.ReglaFalsaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ReglaFalsaButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ReglaFalsaButton.Location = New System.Drawing.Point(0, 249)
+        Me.ReglaFalsaButton.Name = "ReglaFalsaButton"
+        Me.ReglaFalsaButton.Size = New System.Drawing.Size(200, 30)
+        Me.ReglaFalsaButton.TabIndex = 12
+        Me.ReglaFalsaButton.Text = "Regla falsa"
+        Me.ReglaFalsaButton.UseVisualStyleBackColor = True
+        '
+        'ImparesButton
+        '
+        Me.ImparesButton.FlatAppearance.BorderSize = 0
+        Me.ImparesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ImparesButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ImparesButton.Location = New System.Drawing.Point(0, 141)
+        Me.ImparesButton.Name = "ImparesButton"
+        Me.ImparesButton.Size = New System.Drawing.Size(200, 30)
+        Me.ImparesButton.TabIndex = 11
+        Me.ImparesButton.Text = "Impares"
+        Me.ImparesButton.UseVisualStyleBackColor = True
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -112,7 +206,7 @@ Partial Class MainContainer
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label3.Location = New System.Drawing.Point(10, 89)
+        Me.Label3.Location = New System.Drawing.Point(7, 89)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(190, 21)
         Me.Label3.TabIndex = 2
@@ -151,100 +245,6 @@ Partial Class MainContainer
         Me.Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Salir.TabIndex = 0
         Me.Salir.TabStop = False
-        '
-        'ImparesButton
-        '
-        Me.ImparesButton.FlatAppearance.BorderSize = 0
-        Me.ImparesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ImparesButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ImparesButton.Location = New System.Drawing.Point(0, 141)
-        Me.ImparesButton.Name = "ImparesButton"
-        Me.ImparesButton.Size = New System.Drawing.Size(200, 30)
-        Me.ImparesButton.TabIndex = 11
-        Me.ImparesButton.Text = "Impares"
-        Me.ImparesButton.UseVisualStyleBackColor = True
-        '
-        'ReglaFalsaButton
-        '
-        Me.ReglaFalsaButton.FlatAppearance.BorderSize = 0
-        Me.ReglaFalsaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ReglaFalsaButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ReglaFalsaButton.Location = New System.Drawing.Point(0, 249)
-        Me.ReglaFalsaButton.Name = "ReglaFalsaButton"
-        Me.ReglaFalsaButton.Size = New System.Drawing.Size(200, 30)
-        Me.ReglaFalsaButton.TabIndex = 12
-        Me.ReglaFalsaButton.Text = "Regla falsa"
-        Me.ReglaFalsaButton.UseVisualStyleBackColor = True
-        '
-        'BiseccionButton
-        '
-        Me.BiseccionButton.FlatAppearance.BorderSize = 0
-        Me.BiseccionButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BiseccionButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BiseccionButton.Location = New System.Drawing.Point(0, 213)
-        Me.BiseccionButton.Name = "BiseccionButton"
-        Me.BiseccionButton.Size = New System.Drawing.Size(200, 30)
-        Me.BiseccionButton.TabIndex = 13
-        Me.BiseccionButton.Text = "Bisección"
-        Me.BiseccionButton.UseVisualStyleBackColor = True
-        '
-        'RaizDeDosButton
-        '
-        Me.RaizDeDosButton.FlatAppearance.BorderSize = 0
-        Me.RaizDeDosButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.RaizDeDosButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RaizDeDosButton.Location = New System.Drawing.Point(0, 177)
-        Me.RaizDeDosButton.Name = "RaizDeDosButton"
-        Me.RaizDeDosButton.Size = New System.Drawing.Size(200, 30)
-        Me.RaizDeDosButton.TabIndex = 14
-        Me.RaizDeDosButton.Text = "Raíz de dos"
-        Me.RaizDeDosButton.UseVisualStyleBackColor = True
-        '
-        'NewtonRahpsonButton
-        '
-        Me.NewtonRahpsonButton.FlatAppearance.BorderSize = 0
-        Me.NewtonRahpsonButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.NewtonRahpsonButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NewtonRahpsonButton.Location = New System.Drawing.Point(0, 285)
-        Me.NewtonRahpsonButton.Name = "NewtonRahpsonButton"
-        Me.NewtonRahpsonButton.Size = New System.Drawing.Size(200, 30)
-        Me.NewtonRahpsonButton.TabIndex = 15
-        Me.NewtonRahpsonButton.Text = "Newton Raphson"
-        Me.NewtonRahpsonButton.UseVisualStyleBackColor = True
-        '
-        'JacobiButton
-        '
-        Me.JacobiButton.FlatAppearance.BorderSize = 0
-        Me.JacobiButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.JacobiButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.JacobiButton.Location = New System.Drawing.Point(0, 336)
-        Me.JacobiButton.Name = "JacobiButton"
-        Me.JacobiButton.Size = New System.Drawing.Size(200, 30)
-        Me.JacobiButton.TabIndex = 16
-        Me.JacobiButton.Text = "Jacobi"
-        Me.JacobiButton.UseVisualStyleBackColor = True
-        '
-        'GaussSeidelButton
-        '
-        Me.GaussSeidelButton.FlatAppearance.BorderSize = 0
-        Me.GaussSeidelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.GaussSeidelButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GaussSeidelButton.Location = New System.Drawing.Point(0, 372)
-        Me.GaussSeidelButton.Name = "GaussSeidelButton"
-        Me.GaussSeidelButton.Size = New System.Drawing.Size(200, 30)
-        Me.GaussSeidelButton.TabIndex = 17
-        Me.GaussSeidelButton.Text = "Gauss-Seidel"
-        Me.GaussSeidelButton.UseVisualStyleBackColor = True
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(3, 318)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(93, 15)
-        Me.Label4.TabIndex = 19
-        Me.Label4.Text = "Segundo parcial"
         '
         'MainContainer
         '
