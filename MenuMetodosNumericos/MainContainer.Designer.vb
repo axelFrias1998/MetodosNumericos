@@ -60,7 +60,7 @@ Partial Class MainContainer
         '
         'panelFormularios
         '
-        Me.panelFormularios.BackColor = System.Drawing.Color.Gainsboro
+        Me.panelFormularios.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.panelFormularios.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panelFormularios.Location = New System.Drawing.Point(200, 32)
         Me.panelFormularios.Name = "panelFormularios"
@@ -90,10 +90,12 @@ Partial Class MainContainer
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(3, 318)
+        Me.Label4.BackColor = System.Drawing.Color.PeachPuff
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.DimGray
+        Me.Label4.Location = New System.Drawing.Point(8, 340)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(93, 15)
+        Me.Label4.Size = New System.Drawing.Size(164, 23)
         Me.Label4.TabIndex = 19
         Me.Label4.Text = "Segundo parcial"
         '
@@ -102,7 +104,7 @@ Partial Class MainContainer
         Me.GaussSeidelButton.FlatAppearance.BorderSize = 0
         Me.GaussSeidelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GaussSeidelButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GaussSeidelButton.Location = New System.Drawing.Point(0, 372)
+        Me.GaussSeidelButton.Location = New System.Drawing.Point(0, 402)
         Me.GaussSeidelButton.Name = "GaussSeidelButton"
         Me.GaussSeidelButton.Size = New System.Drawing.Size(200, 30)
         Me.GaussSeidelButton.TabIndex = 17
@@ -114,7 +116,7 @@ Partial Class MainContainer
         Me.JacobiButton.FlatAppearance.BorderSize = 0
         Me.JacobiButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.JacobiButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.JacobiButton.Location = New System.Drawing.Point(0, 336)
+        Me.JacobiButton.Location = New System.Drawing.Point(0, 366)
         Me.JacobiButton.Name = "JacobiButton"
         Me.JacobiButton.Size = New System.Drawing.Size(200, 30)
         Me.JacobiButton.TabIndex = 16
@@ -125,8 +127,8 @@ Partial Class MainContainer
         '
         Me.NewtonRahpsonButton.FlatAppearance.BorderSize = 0
         Me.NewtonRahpsonButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.NewtonRahpsonButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NewtonRahpsonButton.Location = New System.Drawing.Point(0, 285)
+        Me.NewtonRahpsonButton.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NewtonRahpsonButton.Location = New System.Drawing.Point(0, 303)
         Me.NewtonRahpsonButton.Name = "NewtonRahpsonButton"
         Me.NewtonRahpsonButton.Size = New System.Drawing.Size(200, 30)
         Me.NewtonRahpsonButton.TabIndex = 15
@@ -137,8 +139,8 @@ Partial Class MainContainer
         '
         Me.RaizDeDosButton.FlatAppearance.BorderSize = 0
         Me.RaizDeDosButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.RaizDeDosButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RaizDeDosButton.Location = New System.Drawing.Point(0, 177)
+        Me.RaizDeDosButton.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RaizDeDosButton.Location = New System.Drawing.Point(0, 195)
         Me.RaizDeDosButton.Name = "RaizDeDosButton"
         Me.RaizDeDosButton.Size = New System.Drawing.Size(200, 30)
         Me.RaizDeDosButton.TabIndex = 14
@@ -149,8 +151,8 @@ Partial Class MainContainer
         '
         Me.BiseccionButton.FlatAppearance.BorderSize = 0
         Me.BiseccionButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BiseccionButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BiseccionButton.Location = New System.Drawing.Point(0, 213)
+        Me.BiseccionButton.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BiseccionButton.Location = New System.Drawing.Point(0, 231)
         Me.BiseccionButton.Name = "BiseccionButton"
         Me.BiseccionButton.Size = New System.Drawing.Size(200, 30)
         Me.BiseccionButton.TabIndex = 13
@@ -161,8 +163,8 @@ Partial Class MainContainer
         '
         Me.ReglaFalsaButton.FlatAppearance.BorderSize = 0
         Me.ReglaFalsaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ReglaFalsaButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ReglaFalsaButton.Location = New System.Drawing.Point(0, 249)
+        Me.ReglaFalsaButton.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ReglaFalsaButton.Location = New System.Drawing.Point(0, 267)
         Me.ReglaFalsaButton.Name = "ReglaFalsaButton"
         Me.ReglaFalsaButton.Size = New System.Drawing.Size(200, 30)
         Me.ReglaFalsaButton.TabIndex = 12
@@ -173,8 +175,8 @@ Partial Class MainContainer
         '
         Me.ImparesButton.FlatAppearance.BorderSize = 0
         Me.ImparesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ImparesButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ImparesButton.Location = New System.Drawing.Point(0, 141)
+        Me.ImparesButton.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ImparesButton.Location = New System.Drawing.Point(0, 159)
         Me.ImparesButton.Name = "ImparesButton"
         Me.ImparesButton.Size = New System.Drawing.Size(200, 30)
         Me.ImparesButton.TabIndex = 11
@@ -184,10 +186,12 @@ Partial Class MainContainer
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 123)
+        Me.Label1.BackColor = System.Drawing.Color.PeachPuff
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.DimGray
+        Me.Label1.Location = New System.Drawing.Point(8, 133)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(80, 15)
+        Me.Label1.Size = New System.Drawing.Size(140, 23)
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "Primer parcial"
         '
@@ -204,11 +208,12 @@ Partial Class MainContainer
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label3.Location = New System.Drawing.Point(7, 89)
+        Me.Label3.BackColor = System.Drawing.Color.PeachPuff
+        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.DimGray
+        Me.Label3.Location = New System.Drawing.Point(1, 89)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(190, 21)
+        Me.Label3.Size = New System.Drawing.Size(199, 21)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Equipo OSOS MADUROS"
         '
@@ -226,11 +231,11 @@ Partial Class MainContainer
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label2.Location = New System.Drawing.Point(12, 8)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(300, 21)
+        Me.Label2.Size = New System.Drawing.Size(303, 19)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Proyectos Métodos Numéricos - 2NV50"
         '

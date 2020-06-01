@@ -111,4 +111,8 @@
         AbrirFormEnPanel(Of GaussSeidel)()
         GaussSeidelButton.BackColor = Color.FromArgb(128, 128, 255)
     End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
 End Class
