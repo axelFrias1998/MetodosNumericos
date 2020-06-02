@@ -67,7 +67,7 @@ Partial Class Jacobi
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(83, 81)
+        Me.Label1.Location = New System.Drawing.Point(83, 84)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(37, 18)
@@ -80,7 +80,7 @@ Partial Class Jacobi
         Me.Calcular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Calcular.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Calcular.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Calcular.Location = New System.Drawing.Point(521, 123)
+        Me.Calcular.Location = New System.Drawing.Point(521, 126)
         Me.Calcular.Margin = New System.Windows.Forms.Padding(4)
         Me.Calcular.Name = "Calcular"
         Me.Calcular.Size = New System.Drawing.Size(104, 41)
@@ -90,7 +90,7 @@ Partial Class Jacobi
         '
         'a11
         '
-        Me.a11.Location = New System.Drawing.Point(17, 78)
+        Me.a11.Location = New System.Drawing.Point(17, 81)
         Me.a11.Margin = New System.Windows.Forms.Padding(4)
         Me.a11.Name = "a11"
         Me.a11.Size = New System.Drawing.Size(58, 23)
@@ -98,7 +98,7 @@ Partial Class Jacobi
         '
         'a21
         '
-        Me.a21.Location = New System.Drawing.Point(17, 122)
+        Me.a21.Location = New System.Drawing.Point(17, 125)
         Me.a21.Margin = New System.Windows.Forms.Padding(4)
         Me.a21.Name = "a21"
         Me.a21.Size = New System.Drawing.Size(58, 23)
@@ -106,7 +106,7 @@ Partial Class Jacobi
         '
         'a31
         '
-        Me.a31.Location = New System.Drawing.Point(17, 169)
+        Me.a31.Location = New System.Drawing.Point(17, 172)
         Me.a31.Margin = New System.Windows.Forms.Padding(4)
         Me.a31.Name = "a31"
         Me.a31.Size = New System.Drawing.Size(58, 23)
@@ -114,7 +114,7 @@ Partial Class Jacobi
         '
         'a12
         '
-        Me.a12.Location = New System.Drawing.Point(126, 78)
+        Me.a12.Location = New System.Drawing.Point(126, 81)
         Me.a12.Margin = New System.Windows.Forms.Padding(4)
         Me.a12.Name = "a12"
         Me.a12.Size = New System.Drawing.Size(68, 23)
@@ -122,7 +122,7 @@ Partial Class Jacobi
         '
         'a22
         '
-        Me.a22.Location = New System.Drawing.Point(126, 122)
+        Me.a22.Location = New System.Drawing.Point(126, 125)
         Me.a22.Margin = New System.Windows.Forms.Padding(4)
         Me.a22.Name = "a22"
         Me.a22.Size = New System.Drawing.Size(68, 23)
@@ -130,7 +130,7 @@ Partial Class Jacobi
         '
         'a32
         '
-        Me.a32.Location = New System.Drawing.Point(126, 169)
+        Me.a32.Location = New System.Drawing.Point(126, 172)
         Me.a32.Margin = New System.Windows.Forms.Padding(4)
         Me.a32.Name = "a32"
         Me.a32.Size = New System.Drawing.Size(68, 23)
@@ -138,7 +138,7 @@ Partial Class Jacobi
         '
         'a13
         '
-        Me.a13.Location = New System.Drawing.Point(245, 78)
+        Me.a13.Location = New System.Drawing.Point(245, 81)
         Me.a13.Margin = New System.Windows.Forms.Padding(4)
         Me.a13.Name = "a13"
         Me.a13.Size = New System.Drawing.Size(71, 23)
@@ -146,7 +146,7 @@ Partial Class Jacobi
         '
         'a23
         '
-        Me.a23.Location = New System.Drawing.Point(246, 122)
+        Me.a23.Location = New System.Drawing.Point(246, 125)
         Me.a23.Margin = New System.Windows.Forms.Padding(4)
         Me.a23.Name = "a23"
         Me.a23.Size = New System.Drawing.Size(69, 23)
@@ -154,7 +154,7 @@ Partial Class Jacobi
         '
         'a33
         '
-        Me.a33.Location = New System.Drawing.Point(245, 169)
+        Me.a33.Location = New System.Drawing.Point(245, 172)
         Me.a33.Margin = New System.Windows.Forms.Padding(4)
         Me.a33.Name = "a33"
         Me.a33.Size = New System.Drawing.Size(67, 23)
@@ -162,7 +162,7 @@ Partial Class Jacobi
         '
         'b1
         '
-        Me.b1.Location = New System.Drawing.Point(369, 78)
+        Me.b1.Location = New System.Drawing.Point(369, 81)
         Me.b1.Margin = New System.Windows.Forms.Padding(4)
         Me.b1.Name = "b1"
         Me.b1.Size = New System.Drawing.Size(68, 23)
@@ -170,7 +170,7 @@ Partial Class Jacobi
         '
         'b2
         '
-        Me.b2.Location = New System.Drawing.Point(373, 124)
+        Me.b2.Location = New System.Drawing.Point(373, 127)
         Me.b2.Margin = New System.Windows.Forms.Padding(4)
         Me.b2.Name = "b2"
         Me.b2.Size = New System.Drawing.Size(64, 23)
@@ -178,7 +178,7 @@ Partial Class Jacobi
         '
         'b3
         '
-        Me.b3.Location = New System.Drawing.Point(373, 171)
+        Me.b3.Location = New System.Drawing.Point(373, 174)
         Me.b3.Margin = New System.Windows.Forms.Padding(4)
         Me.b3.Name = "b3"
         Me.b3.Size = New System.Drawing.Size(64, 23)
@@ -186,7 +186,7 @@ Partial Class Jacobi
         '
         'tc
         '
-        Me.tc.Location = New System.Drawing.Point(507, 77)
+        Me.tc.Location = New System.Drawing.Point(507, 80)
         Me.tc.Margin = New System.Windows.Forms.Padding(4)
         Me.tc.Name = "tc"
         Me.tc.Size = New System.Drawing.Size(241, 23)
@@ -197,7 +197,7 @@ Partial Class Jacobi
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(83, 129)
+        Me.Label2.Location = New System.Drawing.Point(83, 132)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(37, 18)
@@ -209,7 +209,7 @@ Partial Class Jacobi
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label3.Location = New System.Drawing.Point(83, 172)
+        Me.Label3.Location = New System.Drawing.Point(83, 175)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(37, 18)
@@ -221,7 +221,7 @@ Partial Class Jacobi
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.Location = New System.Drawing.Point(201, 81)
+        Me.Label4.Location = New System.Drawing.Point(201, 84)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(38, 18)
@@ -233,7 +233,7 @@ Partial Class Jacobi
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.Location = New System.Drawing.Point(202, 129)
+        Me.Label5.Location = New System.Drawing.Point(202, 132)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(38, 18)
@@ -245,7 +245,7 @@ Partial Class Jacobi
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label6.Location = New System.Drawing.Point(205, 177)
+        Me.Label6.Location = New System.Drawing.Point(205, 180)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(38, 18)
@@ -257,7 +257,7 @@ Partial Class Jacobi
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label7.Location = New System.Drawing.Point(320, 83)
+        Me.Label7.Location = New System.Drawing.Point(320, 86)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(40, 18)
@@ -269,7 +269,7 @@ Partial Class Jacobi
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label8.Location = New System.Drawing.Point(320, 129)
+        Me.Label8.Location = New System.Drawing.Point(320, 132)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(40, 18)
@@ -281,7 +281,7 @@ Partial Class Jacobi
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label9.Location = New System.Drawing.Point(320, 171)
+        Me.Label9.Location = New System.Drawing.Point(320, 174)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(40, 18)
@@ -293,7 +293,7 @@ Partial Class Jacobi
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label10.Location = New System.Drawing.Point(503, 33)
+        Me.Label10.Location = New System.Drawing.Point(503, 36)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(245, 19)
@@ -305,7 +305,7 @@ Partial Class Jacobi
         Me.Limpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Limpiar.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Limpiar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Limpiar.Location = New System.Drawing.Point(633, 123)
+        Me.Limpiar.Location = New System.Drawing.Point(633, 126)
         Me.Limpiar.Margin = New System.Windows.Forms.Padding(4)
         Me.Limpiar.Name = "Limpiar"
         Me.Limpiar.Size = New System.Drawing.Size(100, 41)
@@ -339,7 +339,7 @@ Partial Class Jacobi
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.Salida.DefaultCellStyle = DataGridViewCellStyle3
         Me.Salida.GridColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Salida.Location = New System.Drawing.Point(13, 242)
+        Me.Salida.Location = New System.Drawing.Point(13, 245)
         Me.Salida.Margin = New System.Windows.Forms.Padding(4)
         Me.Salida.Name = "Salida"
         Me.Salida.Size = New System.Drawing.Size(745, 299)
@@ -385,7 +385,7 @@ Partial Class Jacobi
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label11.Location = New System.Drawing.Point(13, 32)
+        Me.Label11.Location = New System.Drawing.Point(13, 35)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(389, 23)

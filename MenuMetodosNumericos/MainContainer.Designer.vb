@@ -37,9 +37,12 @@ Partial Class MainContainer
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.PanelTitulo = New System.Windows.Forms.Panel()
+        Me.lblProgramaActual = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Salir = New System.Windows.Forms.PictureBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.PanelContainer.SuspendLayout()
+        Me.panelFormularios.SuspendLayout()
         Me.panelMenu.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelTitulo.SuspendLayout()
@@ -61,6 +64,7 @@ Partial Class MainContainer
         'panelFormularios
         '
         Me.panelFormularios.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.panelFormularios.Controls.Add(Me.Label5)
         Me.panelFormularios.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panelFormularios.Location = New System.Drawing.Point(200, 32)
         Me.panelFormularios.Name = "panelFormularios"
@@ -93,7 +97,7 @@ Partial Class MainContainer
         Me.Label4.BackColor = System.Drawing.Color.PeachPuff
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.DimGray
-        Me.Label4.Location = New System.Drawing.Point(8, 340)
+        Me.Label4.Location = New System.Drawing.Point(5, 169)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(164, 23)
         Me.Label4.TabIndex = 19
@@ -104,7 +108,7 @@ Partial Class MainContainer
         Me.GaussSeidelButton.FlatAppearance.BorderSize = 0
         Me.GaussSeidelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GaussSeidelButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GaussSeidelButton.Location = New System.Drawing.Point(0, 402)
+        Me.GaussSeidelButton.Location = New System.Drawing.Point(-3, 231)
         Me.GaussSeidelButton.Name = "GaussSeidelButton"
         Me.GaussSeidelButton.Size = New System.Drawing.Size(200, 30)
         Me.GaussSeidelButton.TabIndex = 17
@@ -116,7 +120,7 @@ Partial Class MainContainer
         Me.JacobiButton.FlatAppearance.BorderSize = 0
         Me.JacobiButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.JacobiButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.JacobiButton.Location = New System.Drawing.Point(0, 366)
+        Me.JacobiButton.Location = New System.Drawing.Point(-3, 195)
         Me.JacobiButton.Name = "JacobiButton"
         Me.JacobiButton.Size = New System.Drawing.Size(200, 30)
         Me.JacobiButton.TabIndex = 16
@@ -134,6 +138,7 @@ Partial Class MainContainer
         Me.NewtonRahpsonButton.TabIndex = 15
         Me.NewtonRahpsonButton.Text = "Newton Raphson"
         Me.NewtonRahpsonButton.UseVisualStyleBackColor = True
+        Me.NewtonRahpsonButton.Visible = False
         '
         'RaizDeDosButton
         '
@@ -146,6 +151,7 @@ Partial Class MainContainer
         Me.RaizDeDosButton.TabIndex = 14
         Me.RaizDeDosButton.Text = "Raíz de dos"
         Me.RaizDeDosButton.UseVisualStyleBackColor = True
+        Me.RaizDeDosButton.Visible = False
         '
         'BiseccionButton
         '
@@ -158,6 +164,7 @@ Partial Class MainContainer
         Me.BiseccionButton.TabIndex = 13
         Me.BiseccionButton.Text = "Bisección"
         Me.BiseccionButton.UseVisualStyleBackColor = True
+        Me.BiseccionButton.Visible = False
         '
         'ReglaFalsaButton
         '
@@ -170,6 +177,7 @@ Partial Class MainContainer
         Me.ReglaFalsaButton.TabIndex = 12
         Me.ReglaFalsaButton.Text = "Regla falsa"
         Me.ReglaFalsaButton.UseVisualStyleBackColor = True
+        Me.ReglaFalsaButton.Visible = False
         '
         'ImparesButton
         '
@@ -182,6 +190,7 @@ Partial Class MainContainer
         Me.ImparesButton.TabIndex = 11
         Me.ImparesButton.Text = "Impares"
         Me.ImparesButton.UseVisualStyleBackColor = True
+        Me.ImparesButton.Visible = False
         '
         'Label1
         '
@@ -194,6 +203,7 @@ Partial Class MainContainer
         Me.Label1.Size = New System.Drawing.Size(140, 23)
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "Primer parcial"
+        Me.Label1.Visible = False
         '
         'PictureBox1
         '
@@ -220,6 +230,7 @@ Partial Class MainContainer
         'PanelTitulo
         '
         Me.PanelTitulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.PanelTitulo.Controls.Add(Me.lblProgramaActual)
         Me.PanelTitulo.Controls.Add(Me.Label2)
         Me.PanelTitulo.Controls.Add(Me.Salir)
         Me.PanelTitulo.Dock = System.Windows.Forms.DockStyle.Top
@@ -227,6 +238,16 @@ Partial Class MainContainer
         Me.PanelTitulo.Name = "PanelTitulo"
         Me.PanelTitulo.Size = New System.Drawing.Size(995, 32)
         Me.PanelTitulo.TabIndex = 0
+        '
+        'lblProgramaActual
+        '
+        Me.lblProgramaActual.AutoSize = True
+        Me.lblProgramaActual.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblProgramaActual.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblProgramaActual.Location = New System.Drawing.Point(423, 8)
+        Me.lblProgramaActual.Name = "lblProgramaActual"
+        Me.lblProgramaActual.Size = New System.Drawing.Size(0, 19)
+        Me.lblProgramaActual.TabIndex = 2
         '
         'Label2
         '
@@ -251,6 +272,18 @@ Partial Class MainContainer
         Me.Salir.TabIndex = 0
         Me.Salir.TabStop = False
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.PeachPuff
+        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.DimGray
+        Me.Label5.Location = New System.Drawing.Point(214, 231)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(354, 23)
+        Me.Label5.TabIndex = 11
+        Me.Label5.Text = "Escoge el método que deseas utilizar"
+        '
         'MainContainer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -261,6 +294,8 @@ Partial Class MainContainer
         Me.Name = "MainContainer"
         Me.Text = "Form1"
         Me.PanelContainer.ResumeLayout(False)
+        Me.panelFormularios.ResumeLayout(False)
+        Me.panelFormularios.PerformLayout()
         Me.panelMenu.ResumeLayout(False)
         Me.panelMenu.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -288,4 +323,6 @@ Partial Class MainContainer
     Friend WithEvents BiseccionButton As Button
     Friend WithEvents ReglaFalsaButton As Button
     Friend WithEvents Label4 As Label
+    Friend WithEvents lblProgramaActual As Label
+    Friend WithEvents Label5 As Label
 End Class

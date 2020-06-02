@@ -71,48 +71,52 @@
     End Sub
 
     Private Sub ImparesButton_Click(sender As Object, e As EventArgs) Handles ImparesButton.Click
+        lblProgramaActual.Text = "Impares"
         ChangeOption()
         AbrirFormEnPanel(Of Impares)()
         ImparesButton.BackColor = Color.FromArgb(128, 128, 255)
     End Sub
 
     Private Sub RaizDeDosButton_Click(sender As Object, e As EventArgs) Handles RaizDeDosButton.Click
+        lblProgramaActual.Text = "Raíz de dos"
         ChangeOption()
         AbrirFormEnPanel(Of RaizDeDos)()
         RaizDeDosButton.BackColor = Color.FromArgb(128, 128, 255)
     End Sub
 
     Private Sub BiseccionButton_Click(sender As Object, e As EventArgs) Handles BiseccionButton.Click
+        lblProgramaActual.Text = "Bisección"
         ChangeOption()
         AbrirFormEnPanel(Of Biseccion)()
         BiseccionButton.BackColor = Color.FromArgb(128, 128, 255)
     End Sub
 
     Private Sub ReglaFalsa_Click(sender As Object, e As EventArgs) Handles ReglaFalsaButton.Click
+        lblProgramaActual.Text = "Regla falsa"
         ChangeOption()
         AbrirFormEnPanel(Of ReglaFalsa)()
         ReglaFalsaButton.BackColor = Color.FromArgb(128, 128, 255)
     End Sub
 
     Private Sub NewtonRahpsonButton_Click(sender As Object, e As EventArgs) Handles NewtonRahpsonButton.Click
+        lblProgramaActual.Text = "Newton Raphson"
         ChangeOption()
         AbrirFormEnPanel(Of NewtonRaphson)()
         NewtonRahpsonButton.BackColor = Color.FromArgb(128, 128, 255)
     End Sub
 
     Private Sub JacobiButton_Click(sender As Object, e As EventArgs) Handles JacobiButton.Click
+        lblProgramaActual.Text = "Jacobi"
         ChangeOption()
         AbrirFormEnPanel(Of Jacobi)()
         JacobiButton.BackColor = Color.FromArgb(128, 128, 255)
     End Sub
 
     Private Sub GaussSeidelButton_Click(sender As Object, e As EventArgs) Handles GaussSeidelButton.Click
+        lblProgramaActual.Text = "Gauss-Seidel"
         ChangeOption()
         AbrirFormEnPanel(Of GaussSeidel)()
         GaussSeidelButton.BackColor = Color.FromArgb(128, 128, 255)
     End Sub
 
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-
-    End Sub
 End Class
