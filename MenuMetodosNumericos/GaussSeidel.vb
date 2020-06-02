@@ -23,9 +23,6 @@
             ez(i) = Math.Abs((z(i) - z(i - 1)) / z(i))
             Salida.Rows.Add(i, Math.Round(x(i), redon), Math.Round(y(i), redon), Math.Round(z(i), redon), Math.Round(ex(i), redon), Math.Round(ey(i), redon), Math.Round(ez(i), redon))
         Loop
-        b1.Text = Math.Round(x(i), redon)
-        b2.Text = Math.Round(y(i), redon)
-        b3.Text = Math.Round(z(i), redon)
     End Sub
 
     Private Sub Limpiar_Click(sender As Object, e As EventArgs) Handles Limpiar.Click

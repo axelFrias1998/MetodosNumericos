@@ -274,106 +274,119 @@ Partial Class GaussSeidel
         '
         'tc
         '
+        Me.tc.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tc.Location = New System.Drawing.Point(507, 78)
         Me.tc.Margin = New System.Windows.Forms.Padding(4)
         Me.tc.Name = "tc"
-        Me.tc.Size = New System.Drawing.Size(241, 20)
+        Me.tc.Size = New System.Drawing.Size(241, 22)
         Me.tc.TabIndex = 44
         '
         'b3
         '
+        Me.b3.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.b3.Location = New System.Drawing.Point(373, 172)
         Me.b3.Margin = New System.Windows.Forms.Padding(4)
         Me.b3.Name = "b3"
-        Me.b3.Size = New System.Drawing.Size(64, 20)
+        Me.b3.Size = New System.Drawing.Size(64, 22)
         Me.b3.TabIndex = 43
         '
         'b2
         '
+        Me.b2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.b2.Location = New System.Drawing.Point(373, 125)
         Me.b2.Margin = New System.Windows.Forms.Padding(4)
         Me.b2.Name = "b2"
-        Me.b2.Size = New System.Drawing.Size(64, 20)
+        Me.b2.Size = New System.Drawing.Size(64, 22)
         Me.b2.TabIndex = 42
         '
         'b1
         '
+        Me.b1.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.b1.Location = New System.Drawing.Point(369, 79)
         Me.b1.Margin = New System.Windows.Forms.Padding(4)
         Me.b1.Name = "b1"
-        Me.b1.Size = New System.Drawing.Size(68, 20)
+        Me.b1.Size = New System.Drawing.Size(68, 22)
         Me.b1.TabIndex = 41
         '
         'a33
         '
+        Me.a33.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.a33.Location = New System.Drawing.Point(245, 170)
         Me.a33.Margin = New System.Windows.Forms.Padding(4)
         Me.a33.Name = "a33"
-        Me.a33.Size = New System.Drawing.Size(67, 20)
+        Me.a33.Size = New System.Drawing.Size(67, 22)
         Me.a33.TabIndex = 40
         '
         'a23
         '
+        Me.a23.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.a23.Location = New System.Drawing.Point(246, 123)
         Me.a23.Margin = New System.Windows.Forms.Padding(4)
         Me.a23.Name = "a23"
-        Me.a23.Size = New System.Drawing.Size(69, 20)
+        Me.a23.Size = New System.Drawing.Size(69, 22)
         Me.a23.TabIndex = 39
         '
         'a13
         '
+        Me.a13.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.a13.Location = New System.Drawing.Point(245, 79)
         Me.a13.Margin = New System.Windows.Forms.Padding(4)
         Me.a13.Name = "a13"
-        Me.a13.Size = New System.Drawing.Size(71, 20)
+        Me.a13.Size = New System.Drawing.Size(71, 22)
         Me.a13.TabIndex = 38
         '
         'a32
         '
+        Me.a32.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.a32.Location = New System.Drawing.Point(126, 170)
         Me.a32.Margin = New System.Windows.Forms.Padding(4)
         Me.a32.Name = "a32"
-        Me.a32.Size = New System.Drawing.Size(68, 20)
+        Me.a32.Size = New System.Drawing.Size(68, 22)
         Me.a32.TabIndex = 37
         '
         'a22
         '
+        Me.a22.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.a22.Location = New System.Drawing.Point(126, 123)
         Me.a22.Margin = New System.Windows.Forms.Padding(4)
         Me.a22.Name = "a22"
-        Me.a22.Size = New System.Drawing.Size(68, 20)
+        Me.a22.Size = New System.Drawing.Size(68, 22)
         Me.a22.TabIndex = 36
         '
         'a12
         '
+        Me.a12.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.a12.Location = New System.Drawing.Point(126, 79)
         Me.a12.Margin = New System.Windows.Forms.Padding(4)
         Me.a12.Name = "a12"
-        Me.a12.Size = New System.Drawing.Size(68, 20)
+        Me.a12.Size = New System.Drawing.Size(68, 22)
         Me.a12.TabIndex = 35
         '
         'a31
         '
+        Me.a31.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.a31.Location = New System.Drawing.Point(17, 170)
         Me.a31.Margin = New System.Windows.Forms.Padding(4)
         Me.a31.Name = "a31"
-        Me.a31.Size = New System.Drawing.Size(58, 20)
+        Me.a31.Size = New System.Drawing.Size(58, 22)
         Me.a31.TabIndex = 34
         '
         'a21
         '
+        Me.a21.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.a21.Location = New System.Drawing.Point(17, 123)
         Me.a21.Margin = New System.Windows.Forms.Padding(4)
         Me.a21.Name = "a21"
-        Me.a21.Size = New System.Drawing.Size(58, 20)
+        Me.a21.Size = New System.Drawing.Size(58, 22)
         Me.a21.TabIndex = 33
         '
         'a11
         '
+        Me.a11.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.a11.Location = New System.Drawing.Point(17, 79)
         Me.a11.Margin = New System.Windows.Forms.Padding(4)
         Me.a11.Name = "a11"
-        Me.a11.Size = New System.Drawing.Size(58, 20)
+        Me.a11.Size = New System.Drawing.Size(58, 22)
         Me.a11.TabIndex = 32
         '
         'Calcular
