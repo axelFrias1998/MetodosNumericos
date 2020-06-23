@@ -24,23 +24,24 @@ Partial Class MainContainer
     Private Sub InitializeComponent()
         Me.PanelContainer = New System.Windows.Forms.Panel()
         Me.panelFormularios = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.panelMenu = New System.Windows.Forms.Panel()
+        Me.TrapeciosButton = New System.Windows.Forms.Button()
+        Me.RectangulosButton = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.GaussSeidelButton = New System.Windows.Forms.Button()
         Me.JacobiButton = New System.Windows.Forms.Button()
-        Me.NewtonRahpsonButton = New System.Windows.Forms.Button()
         Me.RaizDeDosButton = New System.Windows.Forms.Button()
         Me.BiseccionButton = New System.Windows.Forms.Button()
-        Me.ReglaFalsaButton = New System.Windows.Forms.Button()
         Me.ImparesButton = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.PanelTitulo = New System.Windows.Forms.Panel()
         Me.lblProgramaActual = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Salir = New System.Windows.Forms.PictureBox()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.SimpsonButton = New System.Windows.Forms.Button()
         Me.PanelContainer.SuspendLayout()
         Me.panelFormularios.SuspendLayout()
         Me.panelMenu.SuspendLayout()
@@ -71,18 +72,31 @@ Partial Class MainContainer
         Me.panelFormularios.Size = New System.Drawing.Size(795, 503)
         Me.panelFormularios.TabIndex = 2
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.PeachPuff
+        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.DimGray
+        Me.Label5.Location = New System.Drawing.Point(214, 231)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(354, 23)
+        Me.Label5.TabIndex = 11
+        Me.Label5.Text = "Escoge el método que deseas utilizar"
+        '
         'panelMenu
         '
         Me.panelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.panelMenu.Controls.Add(Me.SimpsonButton)
+        Me.panelMenu.Controls.Add(Me.TrapeciosButton)
+        Me.panelMenu.Controls.Add(Me.RectangulosButton)
+        Me.panelMenu.Controls.Add(Me.Label1)
         Me.panelMenu.Controls.Add(Me.Label4)
         Me.panelMenu.Controls.Add(Me.GaussSeidelButton)
         Me.panelMenu.Controls.Add(Me.JacobiButton)
-        Me.panelMenu.Controls.Add(Me.NewtonRahpsonButton)
         Me.panelMenu.Controls.Add(Me.RaizDeDosButton)
         Me.panelMenu.Controls.Add(Me.BiseccionButton)
-        Me.panelMenu.Controls.Add(Me.ReglaFalsaButton)
         Me.panelMenu.Controls.Add(Me.ImparesButton)
-        Me.panelMenu.Controls.Add(Me.Label1)
         Me.panelMenu.Controls.Add(Me.PictureBox1)
         Me.panelMenu.Controls.Add(Me.Label3)
         Me.panelMenu.Dock = System.Windows.Forms.DockStyle.Left
@@ -90,6 +104,42 @@ Partial Class MainContainer
         Me.panelMenu.Name = "panelMenu"
         Me.panelMenu.Size = New System.Drawing.Size(200, 503)
         Me.panelMenu.TabIndex = 1
+        '
+        'TrapeciosButton
+        '
+        Me.TrapeciosButton.FlatAppearance.BorderSize = 0
+        Me.TrapeciosButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.TrapeciosButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TrapeciosButton.Location = New System.Drawing.Point(0, 392)
+        Me.TrapeciosButton.Name = "TrapeciosButton"
+        Me.TrapeciosButton.Size = New System.Drawing.Size(200, 30)
+        Me.TrapeciosButton.TabIndex = 22
+        Me.TrapeciosButton.Text = "Integración por trapecios"
+        Me.TrapeciosButton.UseVisualStyleBackColor = True
+        '
+        'RectangulosButton
+        '
+        Me.RectangulosButton.FlatAppearance.BorderSize = 0
+        Me.RectangulosButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.RectangulosButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RectangulosButton.Location = New System.Drawing.Point(0, 356)
+        Me.RectangulosButton.Name = "RectangulosButton"
+        Me.RectangulosButton.Size = New System.Drawing.Size(200, 30)
+        Me.RectangulosButton.TabIndex = 21
+        Me.RectangulosButton.Text = "Integración por rectángulos"
+        Me.RectangulosButton.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.PeachPuff
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.DimGray
+        Me.Label1.Location = New System.Drawing.Point(8, 320)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(138, 23)
+        Me.Label1.TabIndex = 20
+        Me.Label1.Text = "Tercer parcial"
         '
         'Label4
         '
@@ -127,19 +177,6 @@ Partial Class MainContainer
         Me.JacobiButton.Text = "Jacobi"
         Me.JacobiButton.UseVisualStyleBackColor = True
         '
-        'NewtonRahpsonButton
-        '
-        Me.NewtonRahpsonButton.FlatAppearance.BorderSize = 0
-        Me.NewtonRahpsonButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.NewtonRahpsonButton.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NewtonRahpsonButton.Location = New System.Drawing.Point(0, 303)
-        Me.NewtonRahpsonButton.Name = "NewtonRahpsonButton"
-        Me.NewtonRahpsonButton.Size = New System.Drawing.Size(200, 30)
-        Me.NewtonRahpsonButton.TabIndex = 15
-        Me.NewtonRahpsonButton.Text = "Newton Raphson"
-        Me.NewtonRahpsonButton.UseVisualStyleBackColor = True
-        Me.NewtonRahpsonButton.Visible = False
-        '
         'RaizDeDosButton
         '
         Me.RaizDeDosButton.FlatAppearance.BorderSize = 0
@@ -166,19 +203,6 @@ Partial Class MainContainer
         Me.BiseccionButton.UseVisualStyleBackColor = True
         Me.BiseccionButton.Visible = False
         '
-        'ReglaFalsaButton
-        '
-        Me.ReglaFalsaButton.FlatAppearance.BorderSize = 0
-        Me.ReglaFalsaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ReglaFalsaButton.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ReglaFalsaButton.Location = New System.Drawing.Point(0, 267)
-        Me.ReglaFalsaButton.Name = "ReglaFalsaButton"
-        Me.ReglaFalsaButton.Size = New System.Drawing.Size(200, 30)
-        Me.ReglaFalsaButton.TabIndex = 12
-        Me.ReglaFalsaButton.Text = "Regla falsa"
-        Me.ReglaFalsaButton.UseVisualStyleBackColor = True
-        Me.ReglaFalsaButton.Visible = False
-        '
         'ImparesButton
         '
         Me.ImparesButton.FlatAppearance.BorderSize = 0
@@ -191,19 +215,6 @@ Partial Class MainContainer
         Me.ImparesButton.Text = "Impares"
         Me.ImparesButton.UseVisualStyleBackColor = True
         Me.ImparesButton.Visible = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.PeachPuff
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.DimGray
-        Me.Label1.Location = New System.Drawing.Point(8, 133)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(140, 23)
-        Me.Label1.TabIndex = 10
-        Me.Label1.Text = "Primer parcial"
-        Me.Label1.Visible = False
         '
         'PictureBox1
         '
@@ -272,17 +283,17 @@ Partial Class MainContainer
         Me.Salir.TabIndex = 0
         Me.Salir.TabStop = False
         '
-        'Label5
+        'SimpsonButton
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.PeachPuff
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.DimGray
-        Me.Label5.Location = New System.Drawing.Point(214, 231)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(354, 23)
-        Me.Label5.TabIndex = 11
-        Me.Label5.Text = "Escoge el método que deseas utilizar"
+        Me.SimpsonButton.FlatAppearance.BorderSize = 0
+        Me.SimpsonButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.SimpsonButton.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SimpsonButton.Location = New System.Drawing.Point(0, 428)
+        Me.SimpsonButton.Name = "SimpsonButton"
+        Me.SimpsonButton.Size = New System.Drawing.Size(200, 30)
+        Me.SimpsonButton.TabIndex = 23
+        Me.SimpsonButton.Text = "Integración por Simpson 1/3"
+        Me.SimpsonButton.UseVisualStyleBackColor = True
         '
         'MainContainer
         '
@@ -314,15 +325,16 @@ Partial Class MainContainer
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
     Friend WithEvents ImparesButton As Button
     Friend WithEvents GaussSeidelButton As Button
     Friend WithEvents JacobiButton As Button
-    Friend WithEvents NewtonRahpsonButton As Button
     Friend WithEvents RaizDeDosButton As Button
     Friend WithEvents BiseccionButton As Button
-    Friend WithEvents ReglaFalsaButton As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents lblProgramaActual As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents RectangulosButton As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents TrapeciosButton As Button
+    Friend WithEvents SimpsonButton As Button
 End Class

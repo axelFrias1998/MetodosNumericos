@@ -64,8 +64,6 @@
         ImparesButton.BackColor = Color.FromArgb(192, 192, 255)
         RaizDeDosButton.BackColor = Color.FromArgb(192, 192, 255)
         BiseccionButton.BackColor = Color.FromArgb(192, 192, 255)
-        ReglaFalsaButton.BackColor = Color.FromArgb(192, 192, 255)
-        NewtonRahpsonButton.BackColor = Color.FromArgb(192, 192, 255)
         JacobiButton.BackColor = Color.FromArgb(192, 192, 255)
         GaussSeidelButton.BackColor = Color.FromArgb(192, 192, 255)
     End Sub
@@ -91,20 +89,6 @@
         BiseccionButton.BackColor = Color.FromArgb(128, 128, 255)
     End Sub
 
-    Private Sub ReglaFalsa_Click(sender As Object, e As EventArgs) Handles ReglaFalsaButton.Click
-        lblProgramaActual.Text = "Regla falsa"
-        ChangeOption()
-        AbrirFormEnPanel(Of ReglaFalsa)()
-        ReglaFalsaButton.BackColor = Color.FromArgb(128, 128, 255)
-    End Sub
-
-    Private Sub NewtonRahpsonButton_Click(sender As Object, e As EventArgs) Handles NewtonRahpsonButton.Click
-        lblProgramaActual.Text = "Newton Raphson"
-        ChangeOption()
-        AbrirFormEnPanel(Of NewtonRaphson)()
-        NewtonRahpsonButton.BackColor = Color.FromArgb(128, 128, 255)
-    End Sub
-
     Private Sub JacobiButton_Click(sender As Object, e As EventArgs) Handles JacobiButton.Click
         lblProgramaActual.Text = "Jacobi"
         ChangeOption()
@@ -119,4 +103,24 @@
         GaussSeidelButton.BackColor = Color.FromArgb(128, 128, 255)
     End Sub
 
+    Private Sub RectangulosButton_Click(sender As Object, e As EventArgs) Handles RectangulosButton.Click
+        lblProgramaActual.Text = "Integración por rectángulos"
+        ChangeOption()
+        AbrirFormEnPanel(Of IntegracionPorRectangulos)()
+        GaussSeidelButton.BackColor = Color.FromArgb(128, 128, 255)
+    End Sub
+
+    Private Sub TrapeciosButton_Click(sender As Object, e As EventArgs) Handles TrapeciosButton.Click
+        lblProgramaActual.Text = "Integración por trapecios"
+        ChangeOption()
+        AbrirFormEnPanel(Of IntegracionPorTrapecios)()
+        GaussSeidelButton.BackColor = Color.FromArgb(128, 128, 255)
+    End Sub
+
+    Private Sub SimpsonButton_Click(sender As Object, e As EventArgs) Handles SimpsonButton.Click
+        lblProgramaActual.Text = "Integración por Simpson 1/3"
+        ChangeOption()
+        AbrirFormEnPanel(Of IntegracionPorSimpson)()
+        GaussSeidelButton.BackColor = Color.FromArgb(128, 128, 255)
+    End Sub
 End Class
