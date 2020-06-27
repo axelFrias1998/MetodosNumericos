@@ -22,6 +22,8 @@ Partial Class ReglaFalsa
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -48,74 +50,101 @@ Partial Class ReglaFalsa
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(88, 54)
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label1.Location = New System.Drawing.Point(35, 48)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(107, 13)
+        Me.Label1.Size = New System.Drawing.Size(171, 19)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Ingresa una funcion: "
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(141, 96)
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label2.Location = New System.Drawing.Point(109, 91)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(54, 13)
+        Me.Label2.Size = New System.Drawing.Size(85, 19)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Ingresa a:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(138, 136)
+        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label3.Location = New System.Drawing.Point(351, 48)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(57, 13)
+        Me.Label3.Size = New System.Drawing.Size(89, 19)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Ingresa b: "
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(118, 184)
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label4.Location = New System.Drawing.Point(321, 91)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(73, 13)
+        Me.Label4.Size = New System.Drawing.Size(114, 19)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Ingresa cifras:"
         '
         'tf
         '
-        Me.tf.Location = New System.Drawing.Point(266, 54)
+        Me.tf.Location = New System.Drawing.Point(212, 47)
         Me.tf.Name = "tf"
         Me.tf.Size = New System.Drawing.Size(100, 20)
         Me.tf.TabIndex = 4
         '
         'ta
         '
-        Me.ta.Location = New System.Drawing.Point(266, 96)
+        Me.ta.Location = New System.Drawing.Point(212, 90)
         Me.ta.Name = "ta"
         Me.ta.Size = New System.Drawing.Size(100, 20)
         Me.ta.TabIndex = 5
         '
         'tb
         '
-        Me.tb.Location = New System.Drawing.Point(266, 136)
+        Me.tb.Location = New System.Drawing.Point(441, 46)
         Me.tb.Name = "tb"
         Me.tb.Size = New System.Drawing.Size(100, 20)
         Me.tb.TabIndex = 6
         '
         'tc
         '
-        Me.tc.Location = New System.Drawing.Point(266, 184)
+        Me.tc.Location = New System.Drawing.Point(441, 90)
         Me.tc.Name = "tc"
         Me.tc.Size = New System.Drawing.Size(100, 20)
         Me.tc.TabIndex = 7
         '
         'Salida
         '
+        Me.Salida.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Salida.BorderStyle = System.Windows.Forms.BorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Salida.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.Salida.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Salida.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7, Me.Column8})
-        Me.Salida.Location = New System.Drawing.Point(40, 231)
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.PeachPuff
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Salmon
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Salida.DefaultCellStyle = DataGridViewCellStyle2
+        Me.Salida.Location = New System.Drawing.Point(21, 191)
         Me.Salida.Name = "Salida"
-        Me.Salida.Size = New System.Drawing.Size(838, 170)
+        Me.Salida.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.Salida.Size = New System.Drawing.Size(840, 170)
         Me.Salida.TabIndex = 8
         '
         'Column1
@@ -160,16 +189,19 @@ Partial Class ReglaFalsa
         '
         'Calcular
         '
-        Me.Calcular.Location = New System.Drawing.Point(427, 107)
+        Me.Calcular.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Calcular.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Calcular.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Calcular.Location = New System.Drawing.Point(585, 46)
         Me.Calcular.Name = "Calcular"
-        Me.Calcular.Size = New System.Drawing.Size(75, 23)
+        Me.Calcular.Size = New System.Drawing.Size(130, 64)
         Me.Calcular.TabIndex = 9
         Me.Calcular.Text = "&Calcular"
-        Me.Calcular.UseVisualStyleBackColor = True
+        Me.Calcular.UseVisualStyleBackColor = False
         '
         'caja
         '
-        Me.caja.Location = New System.Drawing.Point(623, 107)
+        Me.caja.Location = New System.Drawing.Point(742, 165)
         Me.caja.Name = "caja"
         Me.caja.Size = New System.Drawing.Size(100, 20)
         Me.caja.TabIndex = 10
@@ -177,9 +209,11 @@ Partial Class ReglaFalsa
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(620, 83)
+        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label5.Location = New System.Drawing.Point(738, 143)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(60, 13)
+        Me.Label5.Size = New System.Drawing.Size(86, 19)
         Me.Label5.TabIndex = 11
         Me.Label5.Text = "La raíz es: "
         '

@@ -36,11 +36,11 @@ Partial Class Impares
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.Window
-        Me.Label1.Location = New System.Drawing.Point(134, 117)
+        Me.Label1.Location = New System.Drawing.Point(133, 117)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(200, 18)
+        Me.Label1.Size = New System.Drawing.Size(212, 19)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Ingresa números impares: "
         '
@@ -59,7 +59,7 @@ Partial Class Impares
         Me.Salida.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.PeachPuff
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
@@ -70,16 +70,16 @@ Partial Class Impares
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.PeachPuff
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Salmon
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Salmon
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.Salida.DefaultCellStyle = DataGridViewCellStyle2
-        Me.Salida.Location = New System.Drawing.Point(457, 62)
+        Me.Salida.Location = New System.Drawing.Point(456, 104)
         Me.Salida.Name = "Salida"
         Me.Salida.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         Me.Salida.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.Salida.Size = New System.Drawing.Size(238, 256)
+        Me.Salida.Size = New System.Drawing.Size(240, 256)
         Me.Salida.TabIndex = 2
         '
         'Column1
@@ -97,7 +97,7 @@ Partial Class Impares
         Me.Calcular.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Calcular.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Calcular.ForeColor = System.Drawing.Color.White
-        Me.Calcular.Location = New System.Drawing.Point(224, 207)
+        Me.Calcular.Location = New System.Drawing.Point(182, 213)
         Me.Calcular.Name = "Calcular"
         Me.Calcular.Size = New System.Drawing.Size(121, 56)
         Me.Calcular.TabIndex = 3
