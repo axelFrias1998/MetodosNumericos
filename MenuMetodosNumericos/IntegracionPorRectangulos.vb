@@ -3,6 +3,15 @@
 Public Class IntegracionPorRectangulos
     Dim k, c, n, redon, i As Integer
     Dim ec, suma, integra(2000), erro(2000), a, b, h, j, m, a1, b1, m1 As Single
+
+    Private Sub IntegracionPorRectangulos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Graf_Click(sender As Object, e As EventArgs) Handles Graf.Click
+
+    End Sub
+
     Dim g As Graphics
 
     Function f(x As Single) As Single

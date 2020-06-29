@@ -51,7 +51,7 @@ Partial Class Biseccion
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(85, 90)
+        Me.Label2.Location = New System.Drawing.Point(94, 123)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(76, 19)
         Me.Label2.TabIndex = 1
@@ -62,7 +62,7 @@ Partial Class Biseccion
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(40, 37)
+        Me.Label1.Location = New System.Drawing.Point(49, 70)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(127, 19)
         Me.Label1.TabIndex = 2
@@ -73,7 +73,7 @@ Partial Class Biseccion
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(323, 38)
+        Me.Label3.Location = New System.Drawing.Point(332, 71)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(76, 19)
         Me.Label3.TabIndex = 3
@@ -84,7 +84,7 @@ Partial Class Biseccion
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(294, 89)
+        Me.Label4.Location = New System.Drawing.Point(303, 122)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(105, 19)
         Me.Label4.TabIndex = 4
@@ -92,28 +92,28 @@ Partial Class Biseccion
         '
         'tf
         '
-        Me.tf.Location = New System.Drawing.Point(173, 37)
+        Me.tf.Location = New System.Drawing.Point(182, 70)
         Me.tf.Name = "tf"
         Me.tf.Size = New System.Drawing.Size(100, 20)
         Me.tf.TabIndex = 5
         '
         'ta
         '
-        Me.ta.Location = New System.Drawing.Point(173, 89)
+        Me.ta.Location = New System.Drawing.Point(182, 122)
         Me.ta.Name = "ta"
         Me.ta.Size = New System.Drawing.Size(100, 20)
         Me.ta.TabIndex = 6
         '
         'tb
         '
-        Me.tb.Location = New System.Drawing.Point(418, 37)
+        Me.tb.Location = New System.Drawing.Point(427, 70)
         Me.tb.Name = "tb"
         Me.tb.Size = New System.Drawing.Size(100, 20)
         Me.tb.TabIndex = 7
         '
         'tc
         '
-        Me.tc.Location = New System.Drawing.Point(418, 89)
+        Me.tc.Location = New System.Drawing.Point(427, 122)
         Me.tc.Name = "tc"
         Me.tc.Size = New System.Drawing.Size(100, 20)
         Me.tc.TabIndex = 8
@@ -123,7 +123,7 @@ Partial Class Biseccion
         Me.Calcular.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Calcular.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Calcular.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Calcular.Location = New System.Drawing.Point(610, 53)
+        Me.Calcular.Location = New System.Drawing.Point(619, 86)
         Me.Calcular.Name = "Calcular"
         Me.Calcular.Size = New System.Drawing.Size(111, 53)
         Me.Calcular.TabIndex = 9
@@ -133,6 +133,7 @@ Partial Class Biseccion
         'Salida
         '
         Me.Salida.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Salida.BorderStyle = System.Windows.Forms.BorderStyle.None
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.PeachPuff
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -151,7 +152,7 @@ Partial Class Biseccion
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlDarkDark
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.Salida.DefaultCellStyle = DataGridViewCellStyle2
-        Me.Salida.Location = New System.Drawing.Point(-2, 215)
+        Me.Salida.Location = New System.Drawing.Point(98, 198)
         Me.Salida.Name = "Salida"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.PeachPuff
@@ -162,48 +163,57 @@ Partial Class Biseccion
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Salida.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.Salida.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.Salida.Size = New System.Drawing.Size(824, 223)
+        Me.Salida.Size = New System.Drawing.Size(599, 182)
         Me.Salida.TabIndex = 10
         '
         'Column1
         '
+        Me.Column1.FillWeight = 80.0!
         Me.Column1.HeaderText = "Índice"
         Me.Column1.Name = "Column1"
+        Me.Column1.Width = 70
         '
         'Column2
         '
         Me.Column2.HeaderText = "a"
         Me.Column2.Name = "Column2"
+        Me.Column2.Width = 70
         '
         'Column3
         '
         Me.Column3.HeaderText = "xi"
         Me.Column3.Name = "Column3"
+        Me.Column3.Width = 70
         '
         'Column4
         '
         Me.Column4.HeaderText = "b"
         Me.Column4.Name = "Column4"
+        Me.Column4.Width = 70
         '
         'Column5
         '
         Me.Column5.HeaderText = "f(a)"
         Me.Column5.Name = "Column5"
+        Me.Column5.Width = 70
         '
         'Column6
         '
         Me.Column6.HeaderText = "f(xi)"
         Me.Column6.Name = "Column6"
+        Me.Column6.Width = 70
         '
         'Column7
         '
         Me.Column7.HeaderText = "f(b)"
         Me.Column7.Name = "Column7"
+        Me.Column7.Width = 70
         '
         'Column8
         '
         Me.Column8.HeaderText = "error"
         Me.Column8.Name = "Column8"
+        Me.Column8.Width = 70
         '
         'Biseccion
         '

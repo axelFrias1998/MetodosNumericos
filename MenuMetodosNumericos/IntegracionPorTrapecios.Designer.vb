@@ -26,6 +26,8 @@ Partial Class IntegracionPorTrapecios
         Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Graf = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Salir = New System.Windows.Forms.Button()
         Me.Limpiar = New System.Windows.Forms.Button()
@@ -54,12 +56,14 @@ Partial Class IntegracionPorTrapecios
         '
         'Graf
         '
+        Me.Graf.BackColor = System.Drawing.Color.Transparent
         ChartArea1.Name = "ChartArea1"
         Me.Graf.ChartAreas.Add(ChartArea1)
         Legend1.Name = "Legend1"
         Me.Graf.Legends.Add(Legend1)
-        Me.Graf.Location = New System.Drawing.Point(470, 67)
+        Me.Graf.Location = New System.Drawing.Point(417, 41)
         Me.Graf.Name = "Graf"
+        Me.Graf.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel
         Series1.ChartArea = "ChartArea1"
         Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
         Series1.Color = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -70,53 +74,83 @@ Partial Class IntegracionPorTrapecios
         Series2.Name = "Área"
         Me.Graf.Series.Add(Series1)
         Me.Graf.Series.Add(Series2)
-        Me.Graf.Size = New System.Drawing.Size(300, 300)
+        Me.Graf.Size = New System.Drawing.Size(385, 300)
         Me.Graf.TabIndex = 38
         Me.Graf.Text = "Chart1"
         '
         'Salir
         '
-        Me.Salir.Location = New System.Drawing.Point(350, 145)
+        Me.Salir.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Salir.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Salir.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Salir.Location = New System.Drawing.Point(319, 159)
         Me.Salir.Name = "Salir"
-        Me.Salir.Size = New System.Drawing.Size(75, 23)
+        Me.Salir.Size = New System.Drawing.Size(95, 24)
         Me.Salir.TabIndex = 37
         Me.Salir.Text = "Salir"
-        Me.Salir.UseVisualStyleBackColor = True
+        Me.Salir.UseVisualStyleBackColor = False
         '
         'Limpiar
         '
-        Me.Limpiar.Location = New System.Drawing.Point(350, 116)
+        Me.Limpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Limpiar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Limpiar.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Limpiar.Location = New System.Drawing.Point(319, 126)
         Me.Limpiar.Name = "Limpiar"
-        Me.Limpiar.Size = New System.Drawing.Size(75, 23)
+        Me.Limpiar.Size = New System.Drawing.Size(95, 27)
         Me.Limpiar.TabIndex = 36
         Me.Limpiar.Text = "Limpiar"
-        Me.Limpiar.UseVisualStyleBackColor = True
+        Me.Limpiar.UseVisualStyleBackColor = False
         '
         'Graficar
         '
-        Me.Graficar.Location = New System.Drawing.Point(350, 87)
+        Me.Graficar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Graficar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Graficar.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Graficar.Location = New System.Drawing.Point(319, 94)
         Me.Graficar.Name = "Graficar"
-        Me.Graficar.Size = New System.Drawing.Size(75, 23)
+        Me.Graficar.Size = New System.Drawing.Size(95, 26)
         Me.Graficar.TabIndex = 35
         Me.Graficar.Text = "Graficar"
-        Me.Graficar.UseVisualStyleBackColor = True
+        Me.Graficar.UseVisualStyleBackColor = False
         '
         'Calcular
         '
-        Me.Calcular.Location = New System.Drawing.Point(350, 58)
+        Me.Calcular.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Calcular.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Calcular.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Calcular.Location = New System.Drawing.Point(319, 62)
         Me.Calcular.Name = "Calcular"
-        Me.Calcular.Size = New System.Drawing.Size(75, 23)
+        Me.Calcular.Size = New System.Drawing.Size(95, 26)
         Me.Calcular.TabIndex = 34
         Me.Calcular.Text = "Calcular"
-        Me.Calcular.UseVisualStyleBackColor = True
+        Me.Calcular.UseVisualStyleBackColor = False
         '
         'salida
         '
+        Me.salida.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.salida.BorderStyle = System.Windows.Forms.BorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.salida.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.salida.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.salida.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3})
-        Me.salida.Location = New System.Drawing.Point(81, 242)
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.PeachPuff
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Salmon
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlDarkDark
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.salida.DefaultCellStyle = DataGridViewCellStyle2
+        Me.salida.Location = New System.Drawing.Point(53, 235)
         Me.salida.Name = "salida"
-        Me.salida.Size = New System.Drawing.Size(344, 150)
+        Me.salida.Size = New System.Drawing.Size(344, 180)
         Me.salida.TabIndex = 33
         '
         'Column1
@@ -139,7 +173,7 @@ Partial Class IntegracionPorTrapecios
         '
         'tb1
         '
-        Me.tb1.Location = New System.Drawing.Point(245, 181)
+        Me.tb1.Location = New System.Drawing.Point(280, 198)
         Me.tb1.Name = "tb1"
         Me.tb1.Size = New System.Drawing.Size(39, 20)
         Me.tb1.TabIndex = 32
@@ -147,52 +181,56 @@ Partial Class IntegracionPorTrapecios
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(226, 184)
+        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label7.Location = New System.Drawing.Point(261, 201)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(13, 13)
+        Me.Label7.Size = New System.Drawing.Size(14, 15)
         Me.Label7.TabIndex = 31
         Me.Label7.Text = "a"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(290, 184)
+        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label6.Location = New System.Drawing.Point(325, 201)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(13, 13)
+        Me.Label6.Size = New System.Drawing.Size(14, 15)
         Me.Label6.TabIndex = 30
         Me.Label6.Text = "b"
         '
         'ta1
         '
-        Me.ta1.Location = New System.Drawing.Point(181, 181)
+        Me.ta1.Location = New System.Drawing.Point(216, 198)
         Me.ta1.Name = "ta1"
         Me.ta1.Size = New System.Drawing.Size(39, 20)
         Me.ta1.TabIndex = 29
         '
         'tc
         '
-        Me.tc.Location = New System.Drawing.Point(136, 151)
+        Me.tc.Location = New System.Drawing.Point(157, 159)
         Me.tc.Name = "tc"
         Me.tc.Size = New System.Drawing.Size(38, 20)
         Me.tc.TabIndex = 28
         '
         'tb
         '
-        Me.tb.Location = New System.Drawing.Point(81, 116)
+        Me.tb.Location = New System.Drawing.Point(157, 116)
         Me.tb.Name = "tb"
         Me.tb.Size = New System.Drawing.Size(38, 20)
         Me.tb.TabIndex = 27
         '
         'ta
         '
-        Me.ta.Location = New System.Drawing.Point(81, 90)
+        Me.ta.Location = New System.Drawing.Point(157, 90)
         Me.ta.Name = "ta"
         Me.ta.Size = New System.Drawing.Size(38, 20)
         Me.ta.TabIndex = 26
         '
         'tf
         '
-        Me.tf.Location = New System.Drawing.Point(81, 64)
+        Me.tf.Location = New System.Drawing.Point(157, 64)
         Me.tf.Name = "tf"
         Me.tf.Size = New System.Drawing.Size(146, 20)
         Me.tf.TabIndex = 25
@@ -200,52 +238,63 @@ Partial Class IntegracionPorTrapecios
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(31, 184)
+        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label5.Location = New System.Drawing.Point(33, 199)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(144, 13)
+        Me.Label5.Size = New System.Drawing.Size(181, 16)
         Me.Label5.TabIndex = 24
         Me.Label5.Text = "Dame rango de la gráfica de:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label4.Location = New System.Drawing.Point(31, 145)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(99, 26)
+        Me.Label4.Size = New System.Drawing.Size(124, 32)
         Me.Label4.TabIndex = 23
         Me.Label4.Text = "Dame el número de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "cifras significativas:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label3.Location = New System.Drawing.Point(31, 119)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(47, 13)
+        Me.Label3.Size = New System.Drawing.Size(74, 16)
         Me.Label3.TabIndex = 22
-        Me.Label3.Text = "Dame b:"
+        Me.Label3.Text = "Ingresa b:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label2.Location = New System.Drawing.Point(31, 93)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(47, 13)
+        Me.Label2.Size = New System.Drawing.Size(74, 16)
         Me.Label2.TabIndex = 21
-        Me.Label2.Text = "Dame a:"
+        Me.Label2.Text = "Ingresa a:"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label1.Location = New System.Drawing.Point(31, 67)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
+        Me.Label1.Size = New System.Drawing.Size(69, 16)
         Me.Label1.TabIndex = 20
-        Me.Label1.Text = "Dame f:"
+        Me.Label1.Text = "Ingresa f:"
         '
         'IntegracionPorTrapecios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Graf)
         Me.Controls.Add(Me.Salir)

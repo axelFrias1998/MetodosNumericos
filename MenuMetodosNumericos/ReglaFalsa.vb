@@ -43,6 +43,4 @@ Public Class ReglaFalsa
         Loop
         caja.Text = Math.Round(x(i), redon)
     End Sub
-
-
 End Class
