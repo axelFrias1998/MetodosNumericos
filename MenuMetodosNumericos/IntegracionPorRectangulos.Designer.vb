@@ -228,12 +228,15 @@ Partial Class IntegracionPorRectangulos
         Me.Graf.Legends.Add(Legend1)
         Me.Graf.Location = New System.Drawing.Point(468, 35)
         Me.Graf.Name = "Graf"
+        Series1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Series1.ChartArea = "ChartArea1"
+        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series1.Color = System.Drawing.Color.DarkRed
         Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
+        Series1.Name = "Función"
         Series2.ChartArea = "ChartArea1"
         Series2.Legend = "Legend1"
-        Series2.Name = "Series2"
+        Series2.Name = "Área"
         Me.Graf.Series.Add(Series1)
         Me.Graf.Series.Add(Series2)
         Me.Graf.Size = New System.Drawing.Size(300, 300)

@@ -1,4 +1,6 @@
-﻿Public Class ReglaFalsa
+﻿Imports info.lundin.math
+
+Public Class ReglaFalsa
     Dim a As Single
     Dim b As Single
     Dim c As Integer
@@ -11,8 +13,8 @@
     Function f(x As Single) As Single
         Dim parser As ExpressionParser
         parser = New ExpressionParser
-        parser.values.Clear()
-        parser.values.Add("x", x)
+        parser.Values.Clear()
+        parser.Values.Add("x", x)
         Return parser.Parse(tf.Text)
 
     End Function

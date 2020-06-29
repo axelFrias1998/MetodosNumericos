@@ -26,6 +26,9 @@ Partial Class MainContainer
         Me.panelFormularios = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.panelMenu = New System.Windows.Forms.Panel()
+        Me.NewtonRaphsonButton = New System.Windows.Forms.Button()
+        Me.ReglaFalsaButton = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.SimpsonButton = New System.Windows.Forms.Button()
         Me.TrapeciosButton = New System.Windows.Forms.Button()
         Me.RectangulosButton = New System.Windows.Forms.Button()
@@ -42,9 +45,6 @@ Partial Class MainContainer
         Me.lblProgramaActual = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Salir = New System.Windows.Forms.PictureBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.ReglaFalsaButton = New System.Windows.Forms.Button()
-        Me.NewtonRaphsonButton = New System.Windows.Forms.Button()
         Me.PanelContainer.SuspendLayout()
         Me.panelFormularios.SuspendLayout()
         Me.panelMenu.SuspendLayout()
@@ -110,6 +110,42 @@ Partial Class MainContainer
         Me.panelMenu.Name = "panelMenu"
         Me.panelMenu.Size = New System.Drawing.Size(200, 503)
         Me.panelMenu.TabIndex = 1
+        '
+        'NewtonRaphsonButton
+        '
+        Me.NewtonRaphsonButton.FlatAppearance.BorderSize = 0
+        Me.NewtonRaphsonButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.NewtonRaphsonButton.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NewtonRaphsonButton.Location = New System.Drawing.Point(0, 256)
+        Me.NewtonRaphsonButton.Name = "NewtonRaphsonButton"
+        Me.NewtonRaphsonButton.Size = New System.Drawing.Size(200, 30)
+        Me.NewtonRaphsonButton.TabIndex = 26
+        Me.NewtonRaphsonButton.Text = "Newton Raphson"
+        Me.NewtonRaphsonButton.UseVisualStyleBackColor = True
+        '
+        'ReglaFalsaButton
+        '
+        Me.ReglaFalsaButton.FlatAppearance.BorderSize = 0
+        Me.ReglaFalsaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ReglaFalsaButton.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ReglaFalsaButton.Location = New System.Drawing.Point(0, 229)
+        Me.ReglaFalsaButton.Name = "ReglaFalsaButton"
+        Me.ReglaFalsaButton.Size = New System.Drawing.Size(200, 30)
+        Me.ReglaFalsaButton.TabIndex = 25
+        Me.ReglaFalsaButton.Text = "Regla falsa"
+        Me.ReglaFalsaButton.UseVisualStyleBackColor = True
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.PeachPuff
+        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.DimGray
+        Me.Label6.Location = New System.Drawing.Point(8, 128)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(140, 23)
+        Me.Label6.TabIndex = 24
+        Me.Label6.Text = "Primer parcial"
         '
         'SimpsonButton
         '
@@ -206,7 +242,6 @@ Partial Class MainContainer
         Me.RaizDeDosButton.TabIndex = 14
         Me.RaizDeDosButton.Text = "Raíz de dos"
         Me.RaizDeDosButton.UseVisualStyleBackColor = True
-        Me.RaizDeDosButton.Visible = False
         '
         'BiseccionButton
         '
@@ -219,7 +254,6 @@ Partial Class MainContainer
         Me.BiseccionButton.TabIndex = 13
         Me.BiseccionButton.Text = "Bisección"
         Me.BiseccionButton.UseVisualStyleBackColor = True
-        Me.BiseccionButton.Visible = False
         '
         'ImparesButton
         '
@@ -232,7 +266,6 @@ Partial Class MainContainer
         Me.ImparesButton.TabIndex = 11
         Me.ImparesButton.Text = "Impares"
         Me.ImparesButton.UseVisualStyleBackColor = True
-        Me.ImparesButton.Visible = False
         '
         'PictureBox1
         '
@@ -300,44 +333,6 @@ Partial Class MainContainer
         Me.Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Salir.TabIndex = 0
         Me.Salir.TabStop = False
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.PeachPuff
-        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.DimGray
-        Me.Label6.Location = New System.Drawing.Point(8, 128)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(140, 23)
-        Me.Label6.TabIndex = 24
-        Me.Label6.Text = "Primer parcial"
-        '
-        'ReglaFalsaButton
-        '
-        Me.ReglaFalsaButton.FlatAppearance.BorderSize = 0
-        Me.ReglaFalsaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ReglaFalsaButton.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ReglaFalsaButton.Location = New System.Drawing.Point(0, 229)
-        Me.ReglaFalsaButton.Name = "ReglaFalsaButton"
-        Me.ReglaFalsaButton.Size = New System.Drawing.Size(200, 30)
-        Me.ReglaFalsaButton.TabIndex = 25
-        Me.ReglaFalsaButton.Text = "Regla falsa"
-        Me.ReglaFalsaButton.UseVisualStyleBackColor = True
-        Me.ReglaFalsaButton.Visible = False
-        '
-        'NewtonRaphsonButton
-        '
-        Me.NewtonRaphsonButton.FlatAppearance.BorderSize = 0
-        Me.NewtonRaphsonButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.NewtonRaphsonButton.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NewtonRaphsonButton.Location = New System.Drawing.Point(0, 256)
-        Me.NewtonRaphsonButton.Name = "NewtonRaphsonButton"
-        Me.NewtonRaphsonButton.Size = New System.Drawing.Size(200, 30)
-        Me.NewtonRaphsonButton.TabIndex = 26
-        Me.NewtonRaphsonButton.Text = "Newton Raphson"
-        Me.NewtonRaphsonButton.UseVisualStyleBackColor = True
-        Me.NewtonRaphsonButton.Visible = False
         '
         'MainContainer
         '
