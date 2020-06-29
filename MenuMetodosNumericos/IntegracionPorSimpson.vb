@@ -33,7 +33,7 @@ Public Class IntegracionPorSimpson
         For k = 1 To n
             'suma = suma + (h / 2) * f(a + k * h)
             'suma = suma + f(a + k * h)
-            suma = suma + ((2 * f(a + ((2 * k - 1) * h))) + f(a + (2 * k * h)))
+            suma = suma + ((2 * f(a + (((2 * k) - 1) * h))) + f(a + (2 * k * h)))
         Next
         'suma = (h / 2) * (f(a) + f(b) + (2 * suma))
         suma = (h / 3) * (f(a) - f(b) + (2 * suma))
@@ -49,7 +49,7 @@ Public Class IntegracionPorSimpson
             For k = 1 To n
                 'suma = suma + (h / 2) * f(a + k * h)
                 'suma = suma + f(a + k * h)
-                suma = suma + ((2 * f(a + ((2 * k - 1) * h))) + f(a + (2 * k * h)))
+                suma = suma + ((2 * f(a + (((2 * k) - 1) * h))) + f(a + (2 * k * h)))
             Next
             'suma = (h / 2) * (f(a) + f(b) + (2 * suma))
             suma = (h / 3) * (f(a) - f(b) + (2 * suma))
