@@ -75,8 +75,4 @@ Public Class IntegracionPorTrapecios
         'limpia cajas de textos y demás         
         ta.Clear() : tb.Clear() : tc.Clear() : ta1.Clear() : tb1.Clear() : tc.Clear() : Graf.Series(0).Points.Clear() : Graf.Series(1).Points.Clear() : salida.Rows.Clear() : tf.Clear()
     End Sub
-
-    Private Sub Salir_Click(sender As Object, e As EventArgs) Handles Salir.Click
-
-    End Sub
 End Class

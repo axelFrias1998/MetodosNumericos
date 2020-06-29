@@ -28,7 +28,6 @@ Partial Class IntegracionPorSimpson
         Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Graf = New System.Windows.Forms.DataVisualization.Charting.Chart()
-        Me.Salir = New System.Windows.Forms.Button()
         Me.Limpiar = New System.Windows.Forms.Button()
         Me.Graficar = New System.Windows.Forms.Button()
         Me.Calcular = New System.Windows.Forms.Button()
@@ -78,18 +77,6 @@ Partial Class IntegracionPorSimpson
         Me.Graf.Size = New System.Drawing.Size(374, 300)
         Me.Graf.TabIndex = 57
         Me.Graf.Text = "Chart1"
-        '
-        'Salir
-        '
-        Me.Salir.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Salir.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Salir.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Salir.Location = New System.Drawing.Point(330, 161)
-        Me.Salir.Name = "Salir"
-        Me.Salir.Size = New System.Drawing.Size(95, 26)
-        Me.Salir.TabIndex = 56
-        Me.Salir.Text = "Salir"
-        Me.Salir.UseVisualStyleBackColor = False
         '
         'Limpiar
         '
@@ -310,7 +297,6 @@ Partial Class IntegracionPorSimpson
         Me.Controls.Add(Me.txtIntegral)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Graf)
-        Me.Controls.Add(Me.Salir)
         Me.Controls.Add(Me.Limpiar)
         Me.Controls.Add(Me.Graficar)
         Me.Controls.Add(Me.Calcular)
@@ -338,7 +324,6 @@ Partial Class IntegracionPorSimpson
     End Sub
 
     Friend WithEvents Graf As DataVisualization.Charting.Chart
-    Friend WithEvents Salir As Button
     Friend WithEvents Limpiar As Button
     Friend WithEvents Graficar As Button
     Friend WithEvents Calcular As Button

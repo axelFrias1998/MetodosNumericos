@@ -22,12 +22,12 @@ Partial Class IntegracionPorRectangulos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -48,7 +48,6 @@ Partial Class IntegracionPorRectangulos
         Me.Calcular = New System.Windows.Forms.Button()
         Me.Graficar = New System.Windows.Forms.Button()
         Me.Limpiar = New System.Windows.Forms.Button()
-        Me.Salir = New System.Windows.Forms.Button()
         Me.Graf = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtIntegral = New System.Windows.Forms.TextBox()
@@ -179,24 +178,24 @@ Partial Class IntegracionPorRectangulos
         '
         Me.salida.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.salida.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.salida.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.salida.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.salida.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.salida.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3})
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.PeachPuff
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Salmon
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlDarkDark
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.salida.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.PeachPuff
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Salmon
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlDarkDark
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.salida.DefaultCellStyle = DataGridViewCellStyle2
         Me.salida.Location = New System.Drawing.Point(59, 225)
         Me.salida.Name = "salida"
         Me.salida.Size = New System.Drawing.Size(344, 150)
@@ -256,39 +255,27 @@ Partial Class IntegracionPorRectangulos
         Me.Limpiar.Text = "Limpiar"
         Me.Limpiar.UseVisualStyleBackColor = False
         '
-        'Salir
-        '
-        Me.Salir.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Salir.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Salir.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Salir.Location = New System.Drawing.Point(329, 150)
-        Me.Salir.Name = "Salir"
-        Me.Salir.Size = New System.Drawing.Size(98, 26)
-        Me.Salir.TabIndex = 17
-        Me.Salir.Text = "Salir"
-        Me.Salir.UseVisualStyleBackColor = False
-        '
         'Graf
         '
         Me.Graf.BackColor = System.Drawing.Color.Transparent
-        ChartArea2.Name = "ChartArea1"
-        Me.Graf.ChartAreas.Add(ChartArea2)
-        Legend2.Name = "Legend1"
-        Me.Graf.Legends.Add(Legend2)
+        ChartArea1.Name = "ChartArea1"
+        Me.Graf.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.Graf.Legends.Add(Legend1)
         Me.Graf.Location = New System.Drawing.Point(433, 42)
         Me.Graf.Name = "Graf"
         Me.Graf.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel
-        Series3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Series3.ChartArea = "ChartArea1"
-        Series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series3.Color = System.Drawing.Color.DarkRed
-        Series3.Legend = "Legend1"
-        Series3.Name = "Función"
-        Series4.ChartArea = "ChartArea1"
-        Series4.Legend = "Legend1"
-        Series4.Name = "Área"
-        Me.Graf.Series.Add(Series3)
-        Me.Graf.Series.Add(Series4)
+        Series1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Series1.ChartArea = "ChartArea1"
+        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series1.Color = System.Drawing.Color.DarkRed
+        Series1.Legend = "Legend1"
+        Series1.Name = "Función"
+        Series2.ChartArea = "ChartArea1"
+        Series2.Legend = "Legend1"
+        Series2.Name = "Área"
+        Me.Graf.Series.Add(Series1)
+        Me.Graf.Series.Add(Series2)
         Me.Graf.Size = New System.Drawing.Size(365, 300)
         Me.Graf.TabIndex = 19
         Me.Graf.Text = "Chart1"
@@ -320,7 +307,6 @@ Partial Class IntegracionPorRectangulos
         Me.Controls.Add(Me.txtIntegral)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Graf)
-        Me.Controls.Add(Me.Salir)
         Me.Controls.Add(Me.Limpiar)
         Me.Controls.Add(Me.Graficar)
         Me.Controls.Add(Me.Calcular)
@@ -367,7 +353,6 @@ Partial Class IntegracionPorRectangulos
     Friend WithEvents Calcular As Button
     Friend WithEvents Graficar As Button
     Friend WithEvents Limpiar As Button
-    Friend WithEvents Salir As Button
     Friend WithEvents Graf As DataVisualization.Charting.Chart
     Friend WithEvents Label8 As Label
     Friend WithEvents txtIntegral As TextBox
