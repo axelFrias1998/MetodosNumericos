@@ -51,6 +51,7 @@ Public Class IntegracionPorTrapecios
             erro(i) = Math.Abs((integra(i) - integra(i - 1)) / integra(i))
 
             salida.Rows.Add(n, Math.Round(integra(i), redon), Math.Round(erro(i), redon))
+            txtIntegral.Text = Convert.ToString(Math.Round(integra(i), redon))
         Loop
     End Sub
 

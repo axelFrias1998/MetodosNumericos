@@ -49,6 +49,8 @@ Partial Class IntegracionPorSimpson
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtIntegral = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.Graf, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.salida, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -281,12 +283,32 @@ Partial Class IntegracionPorSimpson
         Me.Label1.TabIndex = 39
         Me.Label1.Text = "Ingresa f:"
         '
+        'txtIntegral
+        '
+        Me.txtIntegral.Location = New System.Drawing.Point(546, 379)
+        Me.txtIntegral.Name = "txtIntegral"
+        Me.txtIntegral.Size = New System.Drawing.Size(110, 20)
+        Me.txtIntegral.TabIndex = 59
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label8.Location = New System.Drawing.Point(477, 380)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(63, 16)
+        Me.Label8.TabIndex = 58
+        Me.Label8.Text = "Integral:"
+        '
         'IntegracionPorSimpson
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.txtIntegral)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Graf)
         Me.Controls.Add(Me.Salir)
         Me.Controls.Add(Me.Limpiar)
@@ -337,4 +359,6 @@ Partial Class IntegracionPorSimpson
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents txtIntegral As TextBox
+    Friend WithEvents Label8 As Label
 End Class
